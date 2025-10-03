@@ -1,0 +1,409 @@
+/*Recuadro de navegación*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background-color: #fff;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.logo a {
+  pointer-events: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.nav-links a {
+  display: inline-block;       /* Necesario para que funcione transform */
+  transition: transform 0.3s ease; /* Suaviza la animación */
+}
+
+.nav-links a:hover {
+  transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
+}
+/*Final recuadro de navegación*/
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.login-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.cart-icon img {
+  height: 24px;
+  cursor: pointer;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+.centrada {
+    display: block;
+    margin: 0 auto;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center; /*centra horizontalmente*/
+    gap:20px;                /*espacio entre imagenes*/
+}
+
+.galeria figure{
+    text-align: center;      /*centra el texto debajo de cada imagen*/
+
+}
+
+h2 {
+    text-align: center;
+}
+
+.lista-comentarios {
+  display: flex;           /* Pone los comentarios en fila */
+  gap: 20px;               /* Espacio entre comentarios */
+  justify-content: center; /* Centra en la página */
+  flex-wrap: wrap;         /* Hace que salten a la siguiente línea si no caben */
+}
+
+.comentario {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  width: 200px;            /* Ancho fijo de cada comentario */
+  text-align: center;      /* Centrar texto dentro */
+}
+
+
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 20px;                             /* es el espacio entre las columnas */
+    margin: 20px;
+}
+
+.producto {
+    text-align: center;
+    border: 1px solid #ddd;  /* borde gris clarito */
+    border-radius: 8px;         /* esquinas redondiadas */
+    padding: 10px;
+    background: #fff;
+    transition: transform 0.3s;   /* suavixa animacion  */
+}
+
+.producto:hover {
+    transform: scale(1.05);    /* la targeta crezca un poco */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.producto img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 5px;
+}
+
+.nombre {
+    font-weight: bold;    /* texto en negrita */
+    margin: 10px 0 5px;
+}
+
+.precio {
+    color: #444;
+    margin-bottom: 10px;   /* espacio debajo del precio */
+}
+
+.carrito {
+    background: #000000;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.carrito:hover {
+    background: #333333;
+}
+
+
+/*INICIO FORMULARIO*/
+
+.contenedor-formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* dos columnas */
+  align-items: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.contenedor-formulario h2 {
+  grid-column: span 2;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #333;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #888;
+}
+
+/* Botón */
+button {
+  padding: 12px;
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+    .imagen-inicio img {
+      position: absolute;
+  right: 150px; /* Distancia despde el borde derecho */
+  top: 250px;   /* Distancia desde arriba */
+  border-radius: 12px;
+  display: block;
+  width: 30%;
+  height: 400px;
+       }
+
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.login-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.cart-icon img {
+  height: 24px;
+  cursor: pointer;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 48px;
+  color: #c2185b;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 30px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column; /* 🔥 coloca todo en columna */
+  align-items: center;   /* centra los elementos */
+}
+
+.box i {
+  font-size: 100px;
+  color: black;
+  margin-bottom: 10px; /* espacio debajo del icono */
+}
+
+.box p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px 0 15px; /* más espacio entre texto y botón */
+}
+
+.box button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.box button:hover {
+  background: #444;
+}
+
+/*  COMPROBANTE DE PAGO  */
+
+body { 
+  font-family: Arial, sans-serif; /* Fuente del texto */
+  background: #ffffff;           /* Fondo rosado claro */
+  margin: 0;                     /* Quita márgenes por defecto */
+  padding: 0;                    /* Quita el relleno por defecto */
+}
+
+.comprobante {
+  width: 380px;                  /* Ancho fijo del ticket */
+  margin: 60px auto;             /* Centra el comprobante vertical/horizontal */
+  padding: 25px;                 /* Espacio interno */
+  background: #fff;              /* Fondo blanco del ticket */
+  border: 2px dashed #000000;    /* Borde punteado estilo ticket */
+  border-radius: 10px;           /* Bordes redondeados */
+  text-align: center;            /* Centra el texto dentro */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra para dar relieve */
+}
+
+.comprobante h1 {
+  color: #000000;                /* Título en rosado */
+  margin-bottom: 15px;           /* Espacio debajo del título */
+}
+
+.comprobante p {
+  margin: 8px 0;                 /* Espacio entre párrafos */
+}
+
+.comprobante a {
+  display: inline-block;         /* Hace que el enlace parezca botón */
+  margin-top: 15px;              /* Espacio arriba del botón */
+  padding: 8px 18px;             /* Relleno interno del botón */
+  background: #F4AEB0;           /* Color rosado del botón */
+  color: #fff;                   /* Texto blanco */
+  border-radius: 6px;            /* Bordes redondeados */
+  text-decoration: none;         /* Quita el subrayado */
+}
+
+
+
+
+/*PIE DE LA PAGINA*/   
+footer {
+  background: #222;
+  color: rgb(0, 0, 0);
+  padding: 20px 0;
+}
+
+.footer-contenido {
+  display: flex;
+  justify-content: space-between; /* Marca a la izquierda, redes a la derecha */
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* espacio entre logo e texto */
+}
+
+
+
+.redes {
+  display: flex;
+  gap: 15px;
+}
+
+.redes .icono {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.2s;
+}
+
+.redes .icono:hover {
+  transform: scale(1.2); /* efecto zoom */
+}
+
+.footer{
+background: #000000 ；
+color(rgb(0, 0, 0))
+text-align center;
+padding: 2%;
+margin-top: auto;
+}
+
+footer {
+  background-color: #F4AEB0;
+}
+
+footer img {
+  width: 130px; 
+  height: auto; 
+}
